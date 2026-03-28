@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xitoo Mithoo - Premium Food Delivery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Xitoo<span>Mithoo</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🚀 Lightning Fast Delivery</div>
+            <h1>Cravings satisfied <br>in <span>minutes</span>.</h1>
+            <p>Experience the finest culinary delights delivered straight to your door. Xitoo Mithoo brings premium dining to your home.</p>
+            <div class="hero-actions">
+                <button class="btn btn-primary" onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})">Order Now</button>
+                <button class="btn btn-secondary">Download App</button>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <div class="hero-image-glow"></div>
+            <img src="images/hero_burger.png" alt="Delicious Food" class="hero-img" id="heroImage">
+        </div>
+    </header>
+    <section id="menu" class="menu-section">
+        <div class="section-header">
+            <h2>Our Top Rated <span>Dishes</span></h2>
+        </div>
+        <div class="menu-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="burger">Burgers</button>
+            <button class="filter-btn" data-filter="pizza">Pizza</button>
+            <button class="filter-btn" data-filter="asian">Asian</button>
+        </div>
+        <div class="menu-grid" id="menuGrid"></div>
+    </section>
+    <section id="about" class="about-section">
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="images/happy_chef.png" alt="Happy Chef" id="aboutImage">
+            </div>
+            <div class="about-content">
+                <h2>Why Choose <span>Xitoo Mithoo</span>?</h2>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
